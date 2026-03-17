@@ -1,0 +1,83 @@
+2026-03-17 14:42:38,535 [DEBUG] py4...: Calling cytoscape_ping()
+2026-03-17 14:42:38,536 [DEBUG] py4...: ǀCalling cytoscape_version_info(base_url='http://127.0.0.1:1234/v1')
+2026-03-17 14:42:38,536 [DEBUG] py4...: ǀǀCalling cyrest_get('version', base_url='http://127.0.0.1:1234/v1')
+2026-03-17 14:42:38,536 [DEBUG] py4...: Attempting to direct connect to Cytoscape on http://127.0.0.1:1234/v1
+2026-03-17 14:42:38,539 [DEBUG] py4...: Attempting to connect to remote Cytoscape because of error HTTPConnectionPool(host='127.0.0.1', port=1234): Max retries exceeded with url: /v1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fabb714bca0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2026-03-17 14:42:38,539 [DEBUG] py4...: ǀǀHTTP GET(http://127.0.0.1:1234/v1)
+2026-03-17 14:42:39,315 [DEBUG] py4...: Error initially contacting Jupyter-bridge: Error posting to Jupyter-bridge: Channel None:request contains unprocessed message
+2026-03-17 14:42:39,318 [DEBUG] py4...: ǀǀ'cyrest_get' exception RequestException('Cannot find local or remote Cytoscape. Start Cytoscape and then proceed.')
+2026-03-17 14:42:39,320 [DEBUG] py4...: ǀ'cytoscape_version_info' exception RequestException('Cannot find local or remote Cytoscape. Start Cytoscape and then proceed.')
+2026-03-17 14:42:39,320 [DEBUG] py4...: 'cytoscape_ping' exception RequestException('Cannot find local or remote Cytoscape. Start Cytoscape and then proceed.')
+2026-03-17 14:42:39,320 [DEBUG] py4...: --------------------
+2026-03-17 14:48:22,013 [DEBUG] py4...: Calling cytoscape_ping()
+2026-03-17 14:48:22,018 [DEBUG] py4...: ǀCalling cytoscape_version_info(base_url='http://127.0.0.1:1234/v1')
+2026-03-17 14:48:22,018 [DEBUG] py4...: ǀǀCalling cyrest_get('version', base_url='http://127.0.0.1:1234/v1')
+2026-03-17 14:48:22,019 [DEBUG] py4...: Attempting to direct connect to Cytoscape on http://127.0.0.1:1234/v1
+2026-03-17 14:48:22,022 [DEBUG] py4...: Attempting to connect to remote Cytoscape because of error HTTPConnectionPool(host='127.0.0.1', port=1234): Max retries exceeded with url: /v1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb02f809120>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2026-03-17 14:48:22,022 [DEBUG] py4...: ǀǀHTTP GET(http://127.0.0.1:1234/v1)
+2026-03-17 14:48:22,800 [DEBUG] py4...: Error initially contacting Jupyter-bridge: Error posting to Jupyter-bridge: Channel None:request contains unprocessed message
+2026-03-17 14:48:22,803 [DEBUG] py4...: ǀǀ'cyrest_get' exception RequestException('Cannot find local or remote Cytoscape. Start Cytoscape and then proceed.')
+2026-03-17 14:48:22,805 [DEBUG] py4...: ǀ'cytoscape_version_info' exception RequestException('Cannot find local or remote Cytoscape. Start Cytoscape and then proceed.')
+2026-03-17 14:48:22,805 [DEBUG] py4...: 'cytoscape_ping' exception RequestException('Cannot find local or remote Cytoscape. Start Cytoscape and then proceed.')
+2026-03-17 14:48:22,805 [DEBUG] py4...: --------------------
+2026-03-17 14:50:51,368 [DEBUG] py4...: Calling cytoscape_version_info()
+2026-03-17 14:50:51,376 [DEBUG] py4...: ǀCalling cyrest_get('version', base_url='http://127.0.0.1:1234/v1')
+2026-03-17 14:50:51,376 [DEBUG] py4...: Attempting to direct connect to Cytoscape on http://127.0.0.1:1234/v1
+2026-03-17 14:50:51,378 [DEBUG] py4...: Attempting to connect to remote Cytoscape because of error HTTPConnectionPool(host='127.0.0.1', port=1234): Max retries exceeded with url: /v1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fabb6ad3220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2026-03-17 14:50:51,378 [DEBUG] py4...: ǀHTTP GET(http://127.0.0.1:1234/v1)
+2026-03-17 14:50:52,819 [DEBUG] py4...: ǀOK[200], content: {"allAppsStarted":true,"apiVersion":"v1","numberOfCores":12,"memoryStatus":{"usedMemory":500,"freeMemory":1547,"totalMemory":2048,"maxMemory":23008}}
+2026-03-17 14:50:52,820 [DEBUG] py4...: Detected Cytoscape via Jupyter-Bridge
+2026-03-17 14:50:52,820 [DEBUG] py4...: ǀHTTP POST(http://127.0.0.1:1234/v1/commands/filetransfer/setSandbox), json: {'sandboxName': 'default_sandbox', 'copySamples': True, 'reinitialize': True}
+2026-03-17 14:50:54,142 [DEBUG] py4...: ǀOK[200], content: {
+ "data": {"sandboxPath":"C:\\Users\\aishw\\CytoscapeConfiguration\\filetransfer\\default_sandbox"},
+ "errors":[]
+}
+2026-03-17 14:50:54,143 [DEBUG] py4...: ǀHTTP GET(http://127.0.0.1:1234/v1/version)
+2026-03-17 14:50:55,458 [DEBUG] py4...: ǀOK[200], content: {"apiVersion":"v1","cytoscapeVersion":"3.10.3"}
+2026-03-17 14:50:55,459 [DEBUG] py4...: ǀReturning 'cyrest_get': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3'}
+2026-03-17 14:50:55,459 [DEBUG] py4...: HTTP version()
+2026-03-17 14:50:56,780 [DEBUG] py4...: OK[200], content: {"jupyterBridgeVersion":"0.0.2"}
+2026-03-17 14:50:56,782 [DEBUG] py4...: Returning 'cytoscape_version_info': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3', 'automationAPIVersion': '1.13.0', 'py4cytoscapeVersion': '1.13.0', 'jupyterBridgeVersion': '0.0.2'}
+2026-03-17 14:50:56,782 [DEBUG] py4...: --------------------
+2026-03-17 14:50:56,782 [DEBUG] py4...: Calling cytoscape_ping()
+2026-03-17 14:50:56,784 [DEBUG] py4...: ǀCalling cytoscape_version_info(base_url='http://127.0.0.1:1234/v1')
+2026-03-17 14:50:56,784 [DEBUG] py4...: ǀǀCalling cyrest_get('version', base_url='http://127.0.0.1:1234/v1')
+2026-03-17 14:50:56,784 [DEBUG] py4...: ǀǀHTTP GET(http://127.0.0.1:1234/v1/version)
+2026-03-17 14:50:58,257 [DEBUG] py4...: ǀǀOK[200], content: {"apiVersion":"v1","cytoscapeVersion":"3.10.3"}
+2026-03-17 14:50:58,258 [DEBUG] py4...: ǀǀReturning 'cyrest_get': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3'}
+2026-03-17 14:50:58,258 [DEBUG] py4...: ǀHTTP version()
+2026-03-17 14:50:59,693 [DEBUG] py4...: ǀOK[200], content: {"jupyterBridgeVersion":"0.0.2"}
+2026-03-17 14:50:59,694 [DEBUG] py4...: ǀReturning 'cytoscape_version_info': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3', 'automationAPIVersion': '1.13.0', 'py4cytoscapeVersion': '1.13.0', 'jupyterBridgeVersion': '0.0.2'}
+2026-03-17 14:50:59,697 [DEBUG] py4...: Returning 'cytoscape_ping': 'You are connected to Cytoscape!'
+2026-03-17 14:50:59,697 [DEBUG] py4...: --------------------
+2026-03-17 14:54:33,772 [DEBUG] py4...: Calling cytoscape_ping()
+2026-03-17 14:54:33,777 [DEBUG] py4...: ǀCalling cytoscape_version_info(base_url='http://127.0.0.1:1234/v1')
+2026-03-17 14:54:33,777 [DEBUG] py4...: ǀǀCalling cyrest_get('version', base_url='http://127.0.0.1:1234/v1')
+2026-03-17 14:54:33,778 [DEBUG] py4...: ǀǀHTTP GET(http://127.0.0.1:1234/v1/version)
+2026-03-17 14:54:35,539 [DEBUG] py4...: ǀǀOK[200], content: {"apiVersion":"v1","cytoscapeVersion":"3.10.3"}
+2026-03-17 14:54:35,540 [DEBUG] py4...: ǀǀReturning 'cyrest_get': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3'}
+2026-03-17 14:54:35,540 [DEBUG] py4...: ǀHTTP version()
+2026-03-17 14:54:36,855 [DEBUG] py4...: ǀOK[200], content: {"jupyterBridgeVersion":"0.0.2"}
+2026-03-17 14:54:36,856 [DEBUG] py4...: ǀReturning 'cytoscape_version_info': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3', 'automationAPIVersion': '1.13.0', 'py4cytoscapeVersion': '1.13.0', 'jupyterBridgeVersion': '0.0.2'}
+2026-03-17 14:54:36,856 [DEBUG] py4...: Returning 'cytoscape_ping': 'You are connected to Cytoscape!'
+2026-03-17 14:54:36,856 [DEBUG] py4...: --------------------
+2026-03-17 15:09:38,325 [DEBUG] py4...: Calling cytoscape_version_info()
+2026-03-17 15:09:38,333 [DEBUG] py4...: ǀCalling cyrest_get('version', base_url='http://127.0.0.1:1234/v1')
+2026-03-17 15:09:38,334 [DEBUG] py4...: ǀHTTP GET(http://127.0.0.1:1234/v1/version)
+2026-03-17 15:09:39,715 [DEBUG] py4...: ǀOK[200], content: {"apiVersion":"v1","cytoscapeVersion":"3.10.3"}
+2026-03-17 15:09:39,716 [DEBUG] py4...: ǀReturning 'cyrest_get': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3'}
+2026-03-17 15:09:39,717 [DEBUG] py4...: HTTP version()
+2026-03-17 15:09:41,050 [DEBUG] py4...: OK[200], content: {"jupyterBridgeVersion":"0.0.2"}
+2026-03-17 15:09:41,051 [DEBUG] py4...: Returning 'cytoscape_version_info': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3', 'automationAPIVersion': '1.13.0', 'py4cytoscapeVersion': '1.13.0', 'jupyterBridgeVersion': '0.0.2'}
+2026-03-17 15:09:41,052 [DEBUG] py4...: --------------------
+2026-03-17 15:09:41,052 [DEBUG] py4...: Calling cytoscape_ping()
+2026-03-17 15:09:41,052 [DEBUG] py4...: ǀCalling cytoscape_version_info(base_url='http://127.0.0.1:1234/v1')
+2026-03-17 15:09:41,053 [DEBUG] py4...: ǀǀCalling cyrest_get('version', base_url='http://127.0.0.1:1234/v1')
+2026-03-17 15:09:41,053 [DEBUG] py4...: ǀǀHTTP GET(http://127.0.0.1:1234/v1/version)
+2026-03-17 15:09:42,382 [DEBUG] py4...: ǀǀOK[200], content: {"apiVersion":"v1","cytoscapeVersion":"3.10.3"}
+2026-03-17 15:09:42,383 [DEBUG] py4...: ǀǀReturning 'cyrest_get': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3'}
+2026-03-17 15:09:42,383 [DEBUG] py4...: ǀHTTP version()
+2026-03-17 15:09:43,713 [DEBUG] py4...: ǀOK[200], content: {"jupyterBridgeVersion":"0.0.2"}
+2026-03-17 15:09:43,715 [DEBUG] py4...: ǀReturning 'cytoscape_version_info': {'apiVersion': 'v1', 'cytoscapeVersion': '3.10.3', 'automationAPIVersion': '1.13.0', 'py4cytoscapeVersion': '1.13.0', 'jupyterBridgeVersion': '0.0.2'}
+2026-03-17 15:09:43,715 [DEBUG] py4...: Returning 'cytoscape_ping': 'You are connected to Cytoscape!'
+2026-03-17 15:09:43,716 [DEBUG] py4...: --------------------
