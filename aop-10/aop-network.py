@@ -141,4 +141,33 @@ print("Saved → aop10_ke_genes_biomart_subset.tsv")
 
 df_subset["go_id"].value_counts()
 
+# df_ke.subset has: ke_id, process_id
+# df_go has: ensembl_gene_id, external_gene_name, entrezgene_id, go_id
+
+df_merged = df_subset.merge(
+    df_ke.subset[["ke_id", "process_id"]],
+    left_on="go_id",
+    right_on="process_id",
+    how="left"
+)
+
+# Drop redundant process_id column
+df_merged = df_merged.drop(columns=["process_id"])
+new_row = pd.DataFrame([{
+    "ensembl_gene_id":    "",
+    "external_gene_name": "",
+    "entrezgene_id":      "",
+    "go_id":              "",
+    "ke_id":              613
+}])
+
+df_merged = pd.concat([df_merged, new_row], ignore_index=True)
+print(df_merged.tail(3))
+
+print(df_merged.shape)
+print(df_merged.head(10).to_string())
+
+df_merged.to_csv("aop10_go_genes_with_ke.tsv", sep="\t", index=False)
+print("Saved → aop10_go_genes_with_ke.tsv")
+
 
