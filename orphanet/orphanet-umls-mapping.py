@@ -87,3 +87,6 @@ print("\nSaved → orphacode_umls_mapping.tsv")
 df_umls = df[df["UMLS_CUI"].notna()][["OrphaCode", "Disorder_Name", "UMLS_CUI"]]
 df_umls.to_csv("orphacode_umls_only.tsv", sep="\t", index=False)
 print(f"Saved → orphacode_umls_only.tsv ({len(df_umls):,} rows)")
+
+
+

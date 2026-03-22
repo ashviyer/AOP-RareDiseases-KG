@@ -102,3 +102,12 @@ print(df.head(10).to_string())
 
 df.to_csv("disgenet_orphanet_gda.tsv", sep="\t", index=False)
 print("\nSaved → disgenet_orphanet_gda.tsv")
+
+df["diseaseUMLSCUI"].nunique()
+
+df.shape
+df_subset=df[df["ei"] >= 1]
+df_subset.shape
+df_subset = df[["symbolOfGene", "diseaseUMLSCUI", "geneEnsemblIDs","diseaseName"]]
+df_subset.to_csv("disgenet_orphanet_gda_subset.tsv", sep="\t", index=False)
+print("\nSaved → disgenet_orphanet_gda_subset.tsv")
